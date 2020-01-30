@@ -4,6 +4,7 @@ defmodule Hangman.Server do
   alias Hangman.Game
 
   def start_link() do
+    IO.puts("Started new game")
     GenServer.start_link(__MODULE__, nil)
   end
 
